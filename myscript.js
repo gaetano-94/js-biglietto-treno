@@ -1,12 +1,16 @@
+'use strict';
+
 /*Scrivere un programma che chieda all’utente:
 Il numero di chilometri da percorrere
 Età del passeggero*/
 
 //definisco una variabile per i km e mostro un prompt all'utente
-const numeroChilometri = prompt('inserire la distanza che si vuole percorre');
+const numeroChilometri = parseInt(
+  prompt('inserire la distanza che si vuole percorre')
+);
 
 //definisco una variabile per l'età del passeggero e mostro un prompt all'utente
-const etaPasseggero = prompt('inserisci la tua età');
+const etaPasseggero = parseInt(prompt('inserisci la tua età'));
 
 /*Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
 il prezzo del biglietto è definito in base ai km (0.21 € al km)*/
